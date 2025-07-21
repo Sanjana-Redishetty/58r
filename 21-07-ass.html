@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+      <img src="./tsrtc.jpg" alt="" width="100%">
+      <form action="./submit.html" method="get" enctype="text/plain">
+      <fieldset>
+        <legend>Application Details</legend>
+        <table width="80%">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </td>
+                <td>
+                    <label for="fng">Father/Guardian's Name</label>
+                    <input type="text" name="fng" id="fng" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date of Birth</label>
+                    <input type="date" name="date" id="date" required>
+                </td>
+                <td>
+                    <label for="gender">Gender:&nbsp;&nbsp;</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>       
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age As On:</label>
+                    <input type="text" name="year" id="year" size="1" required>
+                    <label for="year">Year(s)</label>
+                     <input type="text" name="month" id="month" size="1" required>
+                    <label for="month">Month(s)</label>
+                     <input type="text" name="day" id="day" size="1" required>
+                    <label for="day">Day(s)</label>
+                </td>
+                <td>
+                    <label for="adhaarno">Adhaar No:</label>
+                    <input type="text" name="adhaarno" id="Adhaarno" maxlength="12" minlength="12">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="whatsapp">Whatsapp No:</label>
+                    <input type="text" name="whatsapp" id="whatsapp" required>
+                </td>
+                <td>
+                    <label for="email">Email id:</label>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                <label for="photo">Photo</label>
+                 <input type="file" id="photo" name="photo"> 
+                 </td>
+            </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+       <table cellpadding="5">
+         <legend>Residential Address Details</legend>
+        <tr>
+            <td>
+                <label for="address">Applicant's Address:</label> 
+                <textarea name="address" id="address"></textarea>
+            </td>
+            <td>
+                <label for="district">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;District:</label>
+                <select name="district" id="district"><option value="hyderabad">Hyderabad</option><option value="kmr" >Kamareddy</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mdl">Mandal</label>:</label> 
+                <select name="mdl" id="mdl"><option value="ptlm">Pitlam</option><option value="klhr">Kalher</option></select>
+            </td>
+            <td>
+                <label for="vlg">Village:</label> 
+                <select name="vlg" id="vlg"><option value="ptlm">Pitlam</option><option value="hsnpr">Hasnapur</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pncd">Pincode:</label>
+                <input type="text" name="pncd" id="pncd" maxlength="6" required>
+            </td>
+        </tr>
+        </table>
+        </fieldset>
+        <fieldset>
+            <table cellpadding="5">
+                <legend>Pass Type Details</legend>
+                <tr>
+                    <td>
+                    <label for="cty">City</label>:</label> 
+                    <select name="cty" id="cty"><option value="kmr">Kamareddy</option><option value="nzb">Nizamabad</option></select>        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pst">Pass Type</label>
+                        <select name="pst" id="pst"><option value="">--Select--</option></select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table cellpadding="5">
+                <legend>Mode of Payment&Pass Collection</legend>
+                <tr>
+                    <td>
+                        <label for="ptm">Payment Mode</label>
+                        <select name="ptm" id="ptm"> <option>COD</option><option>UPI</option></select>     
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Delivery">Pass Delivery Mode</label>
+                        <select name="pdl" id="pdl"> <option value="At Counter">Select Pass Delivery id</option><option>--select--</option></select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="center">Mode of Payment & Pass Collection</label>
+                        <select name="center" id="center"> <option>--select--</option></select> 
+                    </td>
+                </tr>
+             </table>
+        </fieldset>
+        <center>
+            <img src="./captcha.jpg" alt="" width="200">
+            <br>
+            <input type="text" name="" id="">
+            <br>
+            <input type="submit" name="" id="">
+
+        </center>
+    </form>    
+</body>
+</html>
